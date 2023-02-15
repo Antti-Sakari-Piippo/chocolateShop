@@ -46,7 +46,7 @@ i {
 
 body {
   background-color: var(--bg);
-  background-image: url(/images/cocoabg.png);
+  background-image: url(/images/cocoabg.webp);
   height: 100vh;
   height: 100dvh;
   background-position: center;

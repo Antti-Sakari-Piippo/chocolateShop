@@ -4,45 +4,6 @@ const hamburger = document.getElementById('hamburger')
 const main = document.getElementById('main')
 const nav__store = document.getElementById('nav__store')
 
-let navLinks = `<div style="height: 100%">
-<div class="hamburger-icon--holder">
-<div class="hamburger-icon" id="hamburger">
-  <div></div>
-</div>
-</div>
-<div class="nav__items">
-<div class="wrapper flex">
-<div class="nav__logo flex">
-  <a href="/index.html"><h4>Choco</h4></a>
-  <img src="/images/cocoabean logo.png" style="margin-top: 0.4rem" alt="cocoa bean img by...">
-</div>
-<div class="nav__routes">
-  <ul class="flex">
-    <li><a href="/ourStory.html">our story</a></li>
-    <li><div class="nav__holder flex" id="dropdown"><p>store</p><img id="dropdown" src="/images/dropdown.png" alt="dropdown arrow"></div></li>
-    <li><a href="">about</a></li>
-    <li><a href="/contact.html">contact</a></li>
-  </ul>
-</div>
-<div class="nav__social">
-  <ul class="flex">
-    <li><i class="fa fa-twitter"></i></li>
-    <li><i class="fa fa-facebook"></i></li>
-    <li><i class="fa fa-youtube"></i></li>
-    <li><i class="fa fa-instagram"></i></li>
-  </ul>
-</div>
-<div class="nav__login flex">
-  <img src="/images/carbon_user-avatar-filled-alt.png" class="avatar"></img>
-  <button class="login-btn" id="login">
-      Log In
-  </button>
-</div>
-</div>
-</div>
-</div>
-`
-
 let menuItems = `
 <div class="flex">
   <div class="nav__store__links flex">
@@ -127,7 +88,7 @@ let menuItems = `
         <div class="special-offer--holder">
         <h3 class="underline">Special Offer!</h3>
         <div class="special-offer">
-          <img src="/images/chocolateSpecialOffer.png" alt="Choco pawns special offer">
+          <img src="/images/chocolateSpecialOffer.webp" alt="Choco pawns special offer">
           <h3>Choco pawns</h3>
           <button class="btn-white-outline">view details</button>
         </div>
@@ -137,7 +98,6 @@ let menuItems = `
   </div>
 </div>
 `
-// nav.innerHTML = navLinks
 nav__store.innerHTML = menuItems
 
 dropdown.addEventListener(

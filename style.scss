@@ -47,7 +47,7 @@ i {
 
 body {
     background-color: var(--bg);
-    background-image: url(/images/cocoabg.png);
+    background-image: url(/images/cocoabg.webp);
     height: 100vh;
     height: 100dvh;
     background-position: center;
@@ -260,7 +260,7 @@ nav {
 }
 //END OF NAV
 
-// STORE ITEMS
+// STORE LINKS
 .nav__store.show_store {
     display: block;
     opacity: 0.9;
@@ -325,6 +325,7 @@ nav {
         }
     }
 }
+// END OF STORE LINKS
 
 // MAIN FRONT PAGE
 .main.wrapper {
@@ -476,31 +477,19 @@ footer {
     }
     .main {
         flex-direction: column;
-        // margin-bottom: 6rem;
         gap: 0;
-        // margin-bottom: 2rem !important;
     }
     body section .main--right {
-        // width: 100% !important;
         max-width: 95%;
     }
     body section .main--left {
         margin-top: 4rem;
     }
-    // .main__shop_info__img {
-    //     width: 80%;
-    //     margin: 0 auto;
-    // }
 
     .main__shop_info__address {
         right: 3.8rem !important;
     }
-    // .main--right {
-    //     margin-bottom: 10rem !important;
-    // }
-    // .main--left {
-    //     margin-bottom: 4rem !important;
-    // }
+
     .main .main--right .main__shop_info__small-chocolate {
         position: absolute;
         bottom: 1rem;
@@ -509,9 +498,6 @@ footer {
     }
 
     .main__shop_info__visit-us {
-        h4 {
-            // left: -5.7rem !important;
-        }
         img {
             left: -3rem !important;
         }
@@ -600,7 +586,6 @@ footer {
     }
 }
 
-////////////////////
 // OUR STORY PAGE
 #our-story.grid {
     color: var(--choco-dark);
