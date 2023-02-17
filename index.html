@@ -21,7 +21,7 @@
   <body>
     <nav id="nav">
       <div class="hamburger-icon--holder">
-        <div class="hamburger-icon" id="hamburger">
+        <div id="hamburger" class="hamburger-icon" aria-expanded="false" aria-label="Menu">
           <div></div>
         </div>
       </div>
@@ -33,18 +33,18 @@
         </div>
         <div class="nav__routes">
           <ul class="flex">
-            <li><a href="/ourStory.html">our story</a></li>
-            <li><div class="nav__holder flex" id="dropdown"><p>store</p><img id="dropdown" src="/images/dropdown.webp" alt="dropdown arrow"></div></li>
-            <li><a href="">about</a></li>
-            <li><a href="/contact.html">contact</a></li>
+            <li><a href="/ourStory.html" aria-label="link to our story page">our story</a></li>
+            <li><div class="nav__holder flex" id="dropdown" aria-expanded="false"><p aria-label="">store</p><img id="dropdown" src="/images/dropdown.webp" alt="dropdown arrow"></div></li>
+            <li><a href="" aria-label="link to our about page">about</a></li>
+            <li><a href="/contact.html" aria-label="link to our contact page">contact</a></li>
           </ul>
         </div>
         <div class="nav__social">
           <ul class="flex">
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-facebook"></i></li>
-            <li><i class="fa fa-youtube"></i></li>
-            <li><i class="fa fa-instagram"></i></li>
+            <li><a href="" aria-label="link to twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="" aria-label="link to facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="" aria-label="link to youtube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="" aria-label="link to instagram"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
         <div class="nav__login flex"> 
