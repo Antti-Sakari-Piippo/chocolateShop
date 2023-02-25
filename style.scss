@@ -102,8 +102,8 @@ input[type='submit'] {
     all: unset;
     background: var(--choco-dark);
     border-radius: 0.35rem;
-    height: 29px;
-    width: 45px;
+    height: 1.8125rem;
+    width: 2.8125rem;
 }
 input[type='text'] {
     border: none;
@@ -471,7 +471,7 @@ footer {
 }
 
 // responsive main
-@media (max-width: 1255px) {
+@media (max-width: 78.4375em) {
     .nav-icon {
         display: block;
     }
@@ -820,8 +820,8 @@ footer {
         }
         .newsletter__form {
             position: absolute;
-            right: 136px;
-            top: 177px;
+            right: 8.5rem;
+            top: 11.0625rem;
             h3 {
                 margin: 0;
             }
@@ -837,7 +837,7 @@ footer {
             }
             .contact-us__text-input-zone {
                 display: flex;
-                height: 210px;
+                height: 13.125rem;
             }
             input[type='text'] {
                 margin-right: 2rem;
@@ -869,7 +869,7 @@ footer {
                 position: relative;
                 width: 40rem;
                 height: 40rem;
-                max-width: 642px;
+                max-width: 40.125rem;
             }
             .content.flex {
                 gap: 2rem 0;
