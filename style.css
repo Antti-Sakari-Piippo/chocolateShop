@@ -46,7 +46,7 @@ i {
 
 body {
   background-color: var(--bg);
-  background-image: url(/images/cocoabg.webp);
+  background-image: url(images/cocoabg.webp);
   height: 100vh;
   height: 100dvh;
   background-position: center;
@@ -106,8 +106,9 @@ input[type=submit] {
   all: unset;
   background: var(--choco-dark);
   border-radius: 0.35rem;
-  height: 29px;
-  width: 45px;
+  height: 1.8125rem;
+  width: 2.8125rem;
+  white-space: nowrap;
 }
 
 input[type=text] {
@@ -436,7 +437,7 @@ footer p.footer__registration {
   margin: 0 auto;
 }
 
-@media (max-width: 1255px) {
+@media (max-width: 78.4375em) {
   .nav-icon {
     display: block;
   }
@@ -738,8 +739,8 @@ footer p.footer__registration {
 }
 .contact-page .main img {
   position: relative;
-  width: 58.5rem;
-  height: 42.5625rem;
+  width: 41vw;
+  height: 51vh;
   max-width: 40vw;
 }
 .contact-page .main input[type=submit] {
@@ -757,15 +758,15 @@ footer p.footer__registration {
 .contact-page .main .newsletter {
   position: relative;
 }
-.contact-page .main .newsletter__form {
+.contact-page .main .newsletter .newsletter__form {
   position: absolute;
-  right: 136px;
-  top: 177px;
+  right: 2.5rem;
+  bottom: 2.5rem;
 }
-.contact-page .main .newsletter__form h3 {
+.contact-page .main .newsletter .newsletter__form h3 {
   margin: 0;
 }
-.contact-page .main .newsletter__form input[type=submit] {
+.contact-page .main .newsletter .newsletter__form input[type=submit] {
   border-radius: 0 0.35rem 0.35rem 0;
 }
 .contact-page .main .contact-us h2 {
@@ -775,7 +776,7 @@ footer p.footer__registration {
 }
 .contact-page .main .contact-us .contact-us__text-input-zone {
   display: flex;
-  height: 210px;
+  height: 13.125rem;
 }
 .contact-page .main .contact-us input[type=text] {
   margin-right: 2rem;
@@ -803,7 +804,7 @@ footer p.footer__registration {
     position: relative;
     width: 40rem;
     height: 40rem;
-    max-width: 642px;
+    max-width: 40.125rem;
   }
   .contact-page .main .content.flex {
     gap: 2rem 0;
