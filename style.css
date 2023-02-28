@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,15 +13,6 @@
 
 a:hover {
   font-weight: 800;
-}
-
-:root {
-  --chocolate: #795749;
-  --choco-dark: #624f48;
-  --choco-darkest: #2e2522;
-  --bg: #d9d5ca;
-  --footer-nav-content-width: 80vw;
-  --nav-height: 4.5rem;
 }
 
 .flex {
@@ -36,7 +29,7 @@ i {
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-  max-width: var(--footer-nav-content-width);
+  max-width: 80vw;
   height: 100%;
 }
 
@@ -45,7 +38,7 @@ i {
 }
 
 body {
-  background-color: var(--bg);
+  background-color: #d9d5ca;
   background-image: url(images/cocoabg.webp);
   height: 100vh;
   height: 100dvh;
@@ -104,7 +97,7 @@ p {
 
 input[type=submit] {
   all: unset;
-  background: var(--choco-dark);
+  background: #624f48;
   border-radius: 0.35rem;
   height: 1.8125rem;
   width: 2.8125rem;
@@ -157,13 +150,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--choco-dark);
+  background: #624f48;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--choco-darkest);
+  background-color: #2e2522;
   border-radius: 1.25rem;
-  border: 2px solid var(--chocolate);
+  border: 2px solid #795749;
 }
 
 .hamburger-icon--holder .hamburger-icon {
@@ -186,8 +179,8 @@ body::-webkit-scrollbar-thumb {
 nav {
   z-index: 100;
   position: relative;
-  background-color: var(--chocolate);
-  height: var(--nav-height);
+  background-color: #795749;
+  height: 4.5rem;
 }
 nav * > * > * {
   cursor: pointer;
@@ -248,12 +241,12 @@ nav .nav__login .login-btn {
 .nav__store {
   display: none;
   position: absolute;
-  top: var(--nav-height);
+  top: 4.5rem;
   z-index: 999;
   left: 0;
   right: 0;
   color: white;
-  background-color: var(--choco-dark);
+  background-color: #624f48;
   padding: 2.3rem 0;
 }
 .nav__store .flex {
@@ -283,7 +276,7 @@ nav .nav__login .login-btn {
 }
 .nav__store .special-offer {
   height: 95%;
-  border: 1px solid var(--bg);
+  border: 1px solid #d9d5ca;
   padding: 1.4rem 1.8rem;
   margin: 1.8rem auto;
   border-radius: 0.35rem;
@@ -296,7 +289,7 @@ nav .nav__login .login-btn {
 }
 .nav__store .special-offer button.btn-white-outline {
   padding: 0.3rem;
-  border: 1px solid var(--bg);
+  border: 1px solid #d9d5ca;
   color: white;
   margin: 0 auto;
   width: 100%;
@@ -325,12 +318,12 @@ nav .nav__login .login-btn {
 .main .main--left .main__text-area h2,
 .main .main--left .main__text-area h3,
 .main .main--left .main__text-area p {
-  color: var(--chocolate);
+  color: #795749;
 }
 .main .main--left .main__text-area .header {
   width: 18.75rem;
   margin: 0 auto 2rem auto;
-  border-bottom: 0.1875rem solid var(--choco-dark);
+  border-bottom: 0.1875rem solid #624f48;
 }
 .main .main--left .main__text-area .header span {
   font-size: 11.25rem;
@@ -339,19 +332,19 @@ nav .nav__login .login-btn {
   line-height: 0.7;
 }
 .main .main--left .main__text-area span:first-child {
-  color: var(--chocolate);
+  color: #795749;
 }
 .main .main--left .main__text-area span:nth-child(2) {
   color: white;
 }
 .main .main--left .main__text-area span:nth-child(3) {
-  color: var(--chocolate);
+  color: #795749;
 }
 .main .main--left .main__text-area span:nth-child(4) {
   color: white;
 }
 .main .main--left .main__text-area span:nth-child(5) {
-  color: var(--choco-dark);
+  color: #624f48;
 }
 .main .main--left .main__text-area p {
   text-align: center;
@@ -359,7 +352,7 @@ nav .nav__login .login-btn {
 .main .main--left .main__text-area .line {
   margin: 0 auto;
   width: 50%;
-  border-bottom: 2px solid var(--choco-dark);
+  border-bottom: 2px solid #624f48;
   margin: 2rem auto;
 }
 .main .main--right {
@@ -369,7 +362,7 @@ nav .nav__login .login-btn {
   position: relative;
 }
 .main .main--right .main__shop_info .main__shop_info__visit-us h4 {
-  color: var(--chocolate);
+  color: #795749;
   position: absolute;
   top: 0rem;
   left: -8.4rem;
@@ -385,7 +378,7 @@ nav .nav__login .login-btn {
   width: 68.75rem;
 }
 .main .main--right .main__shop_info__address {
-  background-color: var(--chocolate);
+  background-color: #795749;
   opacity: 0.9;
   position: absolute;
   right: -1.2rem;
@@ -414,13 +407,13 @@ nav .nav__login .login-btn {
 }
 
 footer {
-  background-color: var(--choco-dark);
+  background-color: #624f48;
   height: auto;
   width: 100%;
   padding: 1.2rem 0;
 }
 footer .wrapper {
-  width: var(--footer-nav-content-width);
+  width: 80vw;
 }
 footer .footer__logo {
   gap: 0.4rem;
@@ -539,7 +532,7 @@ footer p.footer__registration {
   }
 }
 #our-story.grid {
-  color: var(--choco-dark);
+  color: #624f48;
   display: grid;
   grid-template-columns: repeat(32, 1fr);
   grid-template-rows: repeat(9, 1fr);
@@ -552,7 +545,7 @@ footer p.footer__registration {
 }
 #our-story.grid p {
   font-weight: 500;
-  color: var(--choco-dark);
+  color: #624f48;
 }
 #our-story.grid img {
   border-radius: 0.35rem;
@@ -560,12 +553,12 @@ footer p.footer__registration {
 #our-story.grid span {
   font-size: 2rem;
   font-weight: 800;
-  color: var(--choco-dark);
+  color: #624f48;
   margin-right: 0.4rem;
   padding: 0.4rem 0.7rem 0 0.7rem;
-  background-color: var(--bg);
+  background-color: #d9d5ca;
   border-radius: 0.35rem;
-  border: 2px solid var(--chocolate);
+  border: 2px solid #795749;
 }
 #our-story.grid .elm img:not(.grid__item_4 img) {
   width: 16.5rem;
@@ -576,7 +569,7 @@ footer p.footer__registration {
   grid-row: 2/5;
 }
 #our-story.grid .grid__item_1 h2 {
-  color: var(--choco-dark);
+  color: #624f48;
   margin-bottom: 1rem;
 }
 #our-story.grid .grid__item_1 span {
@@ -656,7 +649,7 @@ footer p.footer__registration {
 
 @media (max-width: 98.125rem) {
   #our-story.grid {
-    color: var(--choco-dark);
+    color: #624f48;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -676,7 +669,7 @@ footer p.footer__registration {
     grid-row: 1/2;
   }
   #our-story.grid .grid__item_1 h2 {
-    color: var(--choco-dark);
+    color: #624f48;
     margin-top: -2rem;
   }
   #our-story.grid .grid__item_2 {
@@ -743,7 +736,7 @@ footer p.footer__registration {
   max-width: 40vw;
 }
 .contact-page .main input[type=submit] {
-  background-color: var(--choco-dark);
+  background-color: #624f48;
   color: white;
   padding: 0.6rem 2rem;
   font-size: 1.5rem;
@@ -769,7 +762,7 @@ footer p.footer__registration {
   border-radius: 0 0.35rem 0.35rem 0;
 }
 .contact-page .main .contact-us h2 {
-  color: var(--chocolate);
+  color: #795749;
   margin-bottom: 1rem;
   font-weight: 500;
 }
