@@ -374,8 +374,9 @@ nav .nav__login .login-btn {
 }
 .main .main--right .main__shop_info__img img {
   border-radius: 1rem;
-  max-height: 42.6875rem;
-  width: 68.75rem;
+  max-height: 36rem;
+  height: 85%;
+  width: 60rem;
 }
 .main .main--right .main__shop_info__address {
   background-color: #795749;

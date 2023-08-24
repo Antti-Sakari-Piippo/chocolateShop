@@ -411,8 +411,9 @@ nav {
         .main__shop_info__img {
             img {
                 border-radius: 1rem;
-                max-height: 42.6875rem;
-                width: 68.75rem;
+                max-height: 36rem;
+                height: 85%;
+                width: 60rem;
             }
         }
         .main__shop_info__address {
@@ -928,4 +929,4 @@ footer {
         display: none !important;
     }
 }
-//END IF FRONT PAGE MEDIA QUERIES
+//END OF FRONT PAGE MEDIA QUERIES
