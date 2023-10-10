@@ -102,13 +102,13 @@ nav__store.innerHTML = menuItems
 
 dropdown.addEventListener(
   'click',
-  () => {
+  function () {
     nav__store.classList.toggle('show_store')
-    console.log('first')
+    var expanded = this.getAttribute('aria-expanded') === 'true'
+    this.setAttribute('aria-expanded', String(!expanded))
   },
   false
 )
-
 hamburger.addEventListener(
   'click',
   () => {
