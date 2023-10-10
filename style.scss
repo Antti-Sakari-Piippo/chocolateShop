@@ -23,14 +23,27 @@ a:hover {
     font-weight: 800;
 }
 
+// focus
+input:focus {
+    outline: none !important;
+    border-color: $choco-dark;
+    box-shadow: 0 0 6px $choco-dark;
+}
+textarea:focus {
+    outline: none !important;
+    border-color: $choco-darkest;
+    box-shadow: 0 0 6px $choco-darkest;
+}
+input[type='submit']:focus,
+button:focus {
+    background: $choco-darkest !important;
+}
+//
+// Utilities
 .flex {
     display: flex;
     gap: 1.4rem;
     align-items: center;
-}
-
-i {
-    color: white;
 }
 
 .wrapper {
@@ -44,6 +57,7 @@ i {
 .underline {
     text-decoration: underline;
 }
+//
 
 body {
     background-color: $bg-color;
@@ -53,6 +67,10 @@ body {
     background-position: center;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+i {
+    color: white;
 }
 
 h1,
@@ -95,6 +113,7 @@ img {
 }
 p {
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 // form
@@ -452,6 +471,10 @@ footer {
     height: auto;
     width: 100%;
     padding: 1.2rem 0;
+    p,
+    h5 {
+        font-weight: 200;
+    }
     .wrapper {
         width: $footer-nav-content-width;
     }
@@ -601,7 +624,6 @@ footer {
     height: 100%;
     padding: 0 2rem;
     p {
-        font-weight: 500;
         color: $choco-dark;
     }
     img {

@@ -15,14 +15,27 @@ a:hover {
   font-weight: 800;
 }
 
+input:focus {
+  outline: none !important;
+  border-color: #624f48;
+  box-shadow: 0 0 6px #624f48;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: #2e2522;
+  box-shadow: 0 0 6px #2e2522;
+}
+
+input[type=submit]:focus,
+button:focus {
+  background: #2e2522 !important;
+}
+
 .flex {
   display: flex;
   gap: 1.4rem;
   align-items: center;
-}
-
-i {
-  color: white;
 }
 
 .wrapper {
@@ -45,6 +58,10 @@ body {
   background-position: center;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+i {
+  color: white;
 }
 
 h1,
@@ -93,6 +110,7 @@ img {
 
 p {
   font-size: 1.6rem;
+  font-weight: 600;
 }
 
 input[type=submit] {
@@ -413,6 +431,10 @@ footer {
   width: 100%;
   padding: 1.2rem 0;
 }
+footer p,
+footer h5 {
+  font-weight: 200;
+}
 footer .wrapper {
   width: 80vw;
 }
@@ -545,7 +567,6 @@ footer p.footer__registration {
   padding: 0 2rem;
 }
 #our-story.grid p {
-  font-weight: 500;
   color: #624f48;
 }
 #our-story.grid img {
