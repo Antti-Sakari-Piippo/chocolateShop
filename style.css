@@ -868,4 +868,7 @@ footer p.footer__registration {
   .main__shop_info__small-chocolate {
     display: none !important;
   }
+  .contact-page .newsletter__form {
+    position: relative !important;
+  }
 }/*# sourceMappingURL=style.css.map */
