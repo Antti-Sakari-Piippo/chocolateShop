@@ -271,6 +271,7 @@ nav .nav__login .login-btn {
   justify-content: center;
 }
 .nav__store .nav__store__links {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5.1vw;

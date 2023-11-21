@@ -302,6 +302,7 @@ nav {
     }
 
     .nav__store__links {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 5.1vw;
