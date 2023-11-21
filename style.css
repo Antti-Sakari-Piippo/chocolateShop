@@ -240,6 +240,9 @@ nav div#dropdown.nav__holder.flex {
   gap: 0.5rem;
   flex-direction: row;
 }
+nav .nav__social ul {
+  padding-top: 0.4rem;
+}
 nav .nav__social ul li i {
   font-size: 1.8rem;
 }
