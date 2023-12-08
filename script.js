@@ -6,7 +6,7 @@ const nav__store = document.getElementById('nav__store')
 
 let menuItems = `
 <div class="flex">
-  <div class="nav__store__links id="menu-content" flex">
+  <div class="nav__store__links" id="menu-content">
     <ul>
       <li class="flex">
         <h3 class="underline">By Occasion</h3>
@@ -109,6 +109,7 @@ dropdown.addEventListener(
   },
   false
 )
+
 hamburger.addEventListener(
   'click',
   () => {
