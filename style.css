@@ -113,6 +113,10 @@ p {
   font-weight: 600;
 }
 
+#nav p {
+  font-weight: normal;
+}
+
 input[type=submit] {
   all: unset;
   background: #624f48;
@@ -495,6 +499,7 @@ footer p.footer__registration {
   #nav .hamburger-icon {
     display: block;
     width: 2.5rem;
+    scale: 0.6;
   }
   .nav__items {
     display: none;

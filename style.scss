@@ -116,6 +116,10 @@ p {
     font-weight: 600;
 }
 
+#nav p {
+    font-weight: normal;
+}
+
 // form
 input[type='submit'] {
     all: unset;
@@ -543,6 +547,7 @@ footer {
     #nav .hamburger-icon {
         display: block;
         width: 2.5rem;
+        scale: 0.6;
     }
     .nav__items {
         display: none;
