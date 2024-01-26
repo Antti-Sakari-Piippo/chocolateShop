@@ -124,6 +124,7 @@ input[type=submit] {
   height: 1.8125rem;
   width: 2.8125rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 input[type=text] {
@@ -134,16 +135,10 @@ input[type=text] {
   height: 3.125rem;
 }
 
-input[type=submit]:hover,
-button:hover {
-  font-weight: 800;
-  scale: 1.04;
-  cursor: pointer;
-}
-
 button,
 button:focus {
   font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
   outline: none;
   background: transparent;
   border: 1px solid transparent;
@@ -155,6 +150,7 @@ button:active {
   outline: none;
   background: transparent;
   border: 1px solid grey;
+  transition: 0.2s ease-in-out;
 }
 
 textarea {
@@ -229,6 +225,7 @@ nav .nav__routes {
 nav .nav__routes .flex {
   gap: 2.5rem;
 }
+nav .nav__routes ul li a:hover,
 nav .nav__routes ul li p:hover {
   font-weight: 800;
 }
@@ -244,6 +241,10 @@ nav div#dropdown.nav__holder.flex {
   gap: 0.5rem;
   flex-direction: row;
 }
+nav .nav__social svg:focus,
+nav .nav__social svg:hover {
+  scale: 1.1;
+}
 nav .nav__social ul {
   padding-top: 0.4rem;
 }
@@ -253,9 +254,16 @@ nav .nav__social ul li i {
 nav .nav__login {
   gap: 0.5rem;
   margin-left: 10%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  padding: 0.25rem 0.7rem;
+  transition: 0.2s;
 }
 nav .nav__login .login-btn {
   color: white;
+}
+nav .nav__login:hover, nav .nav__login:focus {
+  scale: 1.06;
 }
 
 .nav__store.show_store {
