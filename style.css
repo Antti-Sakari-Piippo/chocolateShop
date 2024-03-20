@@ -269,6 +269,7 @@ nav .nav__login:hover, nav .nav__login:focus {
 .nav__store.show_store {
   opacity: 0.9;
   height: 42rem;
+  border-radius: 0 0 2.5vw 2.5vw;
   transition: opacity 400ms, height 400ms;
 }
 .nav__store.show_store .flex {

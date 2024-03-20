@@ -5,6 +5,7 @@ $choco-darkest: #2e2522;
 $bg-color: #d9d5ca;
 $footer-nav-content-width: 80vw;
 $nav-height: 4.5rem;
+$animation-span: 400ms;
 
 *,
 *::before,
@@ -297,9 +298,10 @@ nav {
 
 // STORE LINKS
 .nav__store.show_store {
-    $animation-span: 400ms;
     opacity: 0.9;
     height: 42rem;
+    border-radius: 0 0 2.5vw 2.5vw;
+
     transition:
         opacity $animation-span,
         height $animation-span;
@@ -326,6 +328,7 @@ nav {
     color: white;
     background-color: $choco-dark;
     padding: 2.3rem 0;
+
     transition:
         opacity $animation-span,
         height $animation-span;
