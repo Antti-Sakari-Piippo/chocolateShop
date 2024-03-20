@@ -299,10 +299,22 @@ nav {
 .nav__store.show_store {
     display: block;
     opacity: 0.9;
+    height: auto;
+    .flex {
+        opacity: 1;
+
+        // prevent selection when store is closed
+        user-select: auto;
+        -moz-user-select: auto;
+        -webkit-user-select: auto;
+        -ms-user-select: auto;
+        pointer-events: auto;
+    }
 }
 
 .nav__store {
-    display: none;
+    height: 0;
+    opacity: 0;
     position: absolute;
     top: $nav-height;
     z-index: 999;
@@ -311,9 +323,17 @@ nav {
     color: white;
     background-color: $choco-dark;
     padding: 2.3rem 0;
-
+    transition: opacity 400ms;
     .flex {
+        opacity: 0;
         justify-content: center;
+
+        // allow selection when story is open
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        pointer-events: none;
     }
 
     .nav__store__links {
