@@ -297,9 +297,12 @@ nav {
 
 // STORE LINKS
 .nav__store.show_store {
-    display: block;
+    $animation-span: 400ms;
     opacity: 0.9;
-    height: auto;
+    height: 42rem;
+    transition:
+        opacity $animation-span,
+        height $animation-span;
     .flex {
         opacity: 1;
 
@@ -323,7 +326,9 @@ nav {
     color: white;
     background-color: $choco-dark;
     padding: 2.3rem 0;
-    transition: opacity 400ms;
+    transition:
+        opacity $animation-span,
+        height $animation-span;
     .flex {
         opacity: 0;
         justify-content: center;
@@ -333,7 +338,7 @@ nav {
         -moz-user-select: none;
         -webkit-user-select: none;
         -ms-user-select: none;
-        pointer-events: none;
+        pointer-events: none; /* Pointer events disabled by default */
     }
 
     .nav__store__links {

@@ -267,9 +267,9 @@ nav .nav__login:hover, nav .nav__login:focus {
 }
 
 .nav__store.show_store {
-  display: block;
   opacity: 0.9;
-  height: auto;
+  height: 42rem;
+  transition: opacity 400ms, height 400ms;
 }
 .nav__store.show_store .flex {
   opacity: 1;
@@ -291,7 +291,7 @@ nav .nav__login:hover, nav .nav__login:focus {
   color: white;
   background-color: #624f48;
   padding: 2.3rem 0;
-  transition: opacity 400ms;
+  transition: opacity 400ms, height 400ms;
 }
 .nav__store .flex {
   opacity: 0;
@@ -300,7 +300,7 @@ nav .nav__login:hover, nav .nav__login:focus {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  pointer-events: none;
+  pointer-events: none; /* Pointer events disabled by default */
 }
 .nav__store .nav__store__links {
   display: flex;
