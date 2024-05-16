@@ -3,6 +3,7 @@ const dropdown = document.getElementById('dropdown')
 const hamburger = document.getElementById('hamburger')
 const main = document.getElementById('main')
 const nav__store = document.getElementById('nav__store')
+const close_button = document.getElementById('close-button')
 
 let menuItems = `
 <div class="flex">
@@ -97,6 +98,7 @@ let menuItems = `
     </ul>
   </div>
 </div>
+<button class="close-button" id="close-button">&#10006;</button>
 `
 nav__store.innerHTML = menuItems
 
@@ -126,3 +128,21 @@ main.addEventListener(
   },
   false
 )
+
+// Function to create the close button and append it to the DOM
+function createCloseButton() {
+  const closeButton = document.createElement('button')
+  closeButton.id = 'close-button'
+  closeButton.innerHTML = '&#10006;'
+}
+
+// Add event listener to the body and use event delegation to handle clicks on the close button
+document.body.addEventListener('click', function (event) {
+  if (event.target && event.target.id === 'close-button') {
+    nav__store.classList.remove('show_store')
+    dropdown.setAttribute('aria-expanded', 'false')
+  }
+})
+
+// Call the function to create the close button
+createCloseButton()

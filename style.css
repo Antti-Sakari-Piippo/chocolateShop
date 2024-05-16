@@ -28,8 +28,8 @@ textarea:focus {
 }
 
 input[type=submit]:focus,
-button:focus {
-  background: #2e2522 !important;
+button::focus {
+  background: #2e2522;
 }
 
 .flex {
@@ -179,6 +179,17 @@ body::-webkit-scrollbar-thumb {
 .hamburger-icon--holder .hamburger-icon {
   display: none;
   cursor: pointer;
+}
+
+.close-button {
+  font-size: 2rem;
+  background-color: #d9d5ca;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 1.35rem 1rem 1rem 1rem;
+  line-height: 0;
+  float: right;
+  margin-right: 4rem;
 }
 
 .hamburger-icon:after,
@@ -538,7 +549,7 @@ footer p.footer__registration {
   nav#nav.show_nav {
     position: absolute;
     right: 0;
-    width: 15rem;
+    width: 14rem;
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 0 0 0 1rem;

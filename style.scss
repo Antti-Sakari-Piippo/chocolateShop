@@ -36,8 +36,8 @@ textarea:focus {
     box-shadow: 0 0 6px $choco-darkest;
 }
 input[type='submit']:focus,
-button:focus {
-    background: $choco-darkest !important;
+button::focus {
+    background: $choco-darkest;
 }
 //
 // Utilities
@@ -192,6 +192,18 @@ body::-webkit-scrollbar-thumb {
         display: none;
         cursor: pointer;
     }
+}
+
+.close-button {
+    // color: $chocolate;
+    font-size: 2rem;
+    background-color: $bg-color;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 1.35rem 1rem 1rem 1rem;
+    line-height: 0;
+    float: right;
+    margin-right: 4rem;
 }
 
 .hamburger-icon:after,
@@ -612,7 +624,7 @@ footer {
     nav#nav.show_nav {
         position: absolute;
         right: 0;
-        width: 15rem;
+        width: 14rem;
         height: fit-content;
         border-radius: 0 0 0 1rem;
 
