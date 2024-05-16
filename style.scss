@@ -63,8 +63,9 @@ button:focus {
 body {
     background-color: $bg-color;
     background-image: url(images/cocoabg.webp);
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    // height: 100vh;
+    // height: 100dvh;
     background-position: center;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -235,6 +236,7 @@ nav {
     .nav__routes {
         margin: 0 6rem 0 auto;
         display: flex;
+
         .flex {
             gap: 2.5rem;
         }
@@ -299,8 +301,8 @@ nav {
 // STORE LINKS
 .nav__store.show_store {
     opacity: 0.9;
-    height: 42rem;
     border-radius: 0 0 2.5vw 2.5vw;
+    height: fit-content;
 
     transition:
         opacity $animation-span,
@@ -595,12 +597,13 @@ footer {
 // SHOW NAV ACTIVATED : show nav items in smaller screen when opened
 @media (max-width: 72.5em) {
     .show_nav {
-        #nav .hamburger-icon--holder {
-            display: none;
-        }
-        #nav .hamburger-icon {
-            display: none;
-        }
+        // width: 20% !important;  ////////////////////////
+        // #nav .hamburger-icon--holder {
+        //     display: none;
+        // }
+        // #nav .hamburger-icon {
+        //     display: none;
+        // }
     }
     // SIDE MENU
     nav#nav.show_nav * > * > * {
@@ -609,8 +612,8 @@ footer {
     nav#nav.show_nav {
         position: absolute;
         right: 0;
-        width: 10.35rem;
-        height: 46.875rem;
+        width: 15rem;
+        height: fit-content;
         border-radius: 0 0 0 1rem;
 
         .hamburger-icon--holder,
@@ -622,6 +625,7 @@ footer {
         }
         .nav__items {
             margin-top: 3rem;
+            margin-bottom: 3rem;
             width: 100%;
             display: inline-block;
             .wrapper.flex {
@@ -912,11 +916,6 @@ footer {
                 margin-right: 2rem;
             }
         }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-        }
     }
     @media (max-width: 45em) {
         .contact-us__text-input-zone {
@@ -983,6 +982,10 @@ footer {
         left: -4rem !important;
         top: 1rem;
     }
+
+    // body {
+    //     height: 1400px;
+    // }
 }
 
 @media (max-width: 46.875em) {
@@ -999,3 +1002,8 @@ footer {
     }
 }
 //END OF FRONT PAGE MEDIA QUERIES
+
+@media (max-width: 41.875rem) {
+    body {
+    }
+}

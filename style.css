@@ -53,8 +53,7 @@ button:focus {
 body {
   background-color: #d9d5ca;
   background-image: url(images/cocoabg.webp);
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
   background-position: center;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -268,8 +267,9 @@ nav .nav__login:hover, nav .nav__login:focus {
 
 .nav__store.show_store {
   opacity: 0.9;
-  height: 42rem;
   border-radius: 0 0 2.5vw 2.5vw;
+  height: -moz-fit-content;
+  height: fit-content;
   transition: opacity 400ms, height 400ms;
 }
 .nav__store.show_store .flex {
@@ -532,20 +532,15 @@ footer p.footer__registration {
   }
 }
 @media (max-width: 72.5em) {
-  .show_nav #nav .hamburger-icon--holder {
-    display: none;
-  }
-  .show_nav #nav .hamburger-icon {
-    display: none;
-  }
   nav#nav.show_nav * > * > * {
     cursor: pointer;
   }
   nav#nav.show_nav {
     position: absolute;
     right: 0;
-    width: 10.35rem;
-    height: 46.875rem;
+    width: 15rem;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 0 0 0 1rem;
   }
   nav#nav.show_nav .hamburger-icon--holder,
@@ -557,6 +552,7 @@ footer p.footer__registration {
   }
   nav#nav.show_nav .nav__items {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100%;
     display: inline-block;
   }
@@ -829,10 +825,6 @@ footer p.footer__registration {
 }
 .contact-page .main .contact-us input[type=text] {
   margin-right: 2rem;
-}
-.contact-page .main footer {
-  position: absolute;
-  bottom: 0;
 }
 @media (max-width: 45em) {
   .contact-page .contact-us__text-input-zone {
