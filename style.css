@@ -189,7 +189,7 @@ body::-webkit-scrollbar-thumb {
   padding: 1.35rem 1rem 1rem 1rem;
   line-height: 0;
   float: right;
-  margin-right: 4rem;
+  margin-inline-end: 4rem;
 }
 
 .hamburger-icon:after,
@@ -220,10 +220,10 @@ nav .nav__logo {
   gap: 0.9rem;
 }
 nav .nav__logo h4 {
-  margin-right: -0.6875rem;
+  margin-inline-end: -0.6875rem;
 }
 nav .nav__logo img {
-  margin-top: 0.8rem;
+  margin-block-start: 0.8rem;
 }
 nav .nav__items {
   height: 100% !important;
@@ -263,7 +263,7 @@ nav .nav__social ul li i {
 }
 nav .nav__login {
   gap: 0.5rem;
-  margin-left: 10%;
+  margin-inline-start: 10%;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
   padding: 0.25rem 0.7rem;
@@ -332,7 +332,7 @@ nav .nav__login:hover, nav .nav__login:focus {
 .nav__store .nav__store__links ul li a,
 .nav__store .nav__store__links ul li h3 {
   text-align: center;
-  margin-right: auto;
+  margin-inline-end: auto;
 }
 .nav__store .special-offer--holder {
   flex-direction: column;
@@ -487,10 +487,10 @@ footer .footer__logo {
   gap: 0.4rem;
 }
 footer .footer__logo h5.footer__logo-text {
-  margin-right: -0.35rem;
+  margin-inline-end: -0.35rem;
 }
 footer .footer__logo img.footer__logo-img {
-  margin-top: 0.2rem;
+  margin-block-start: 0.2rem;
   max-width: 3.5rem;
 }
 footer p.footer__registration {
@@ -510,7 +510,7 @@ footer p.footer__registration {
     max-width: 95%;
   }
   body section .main--left {
-    margin-top: 4rem;
+    margin-block-start: 4rem;
   }
   .main__shop_info__address {
     right: 3.8rem !important;
@@ -531,7 +531,7 @@ footer p.footer__registration {
     height: 89%;
     display: flex;
     float: right;
-    margin-right: 2rem;
+    margin-inline-end: 2rem;
   }
   #nav .hamburger-icon {
     display: block;
@@ -562,7 +562,7 @@ footer p.footer__registration {
     justify-content: flex-start;
   }
   nav#nav.show_nav .nav__items {
-    margin-top: 3rem;
+    margin-block-start: 3rem;
     margin-bottom: 3rem;
     width: 100%;
     display: inline-block;
@@ -578,7 +578,7 @@ footer p.footer__registration {
     gap: 1.5rem;
   }
   nav#nav.show_nav .nav__social {
-    margin-top: 2.4rem;
+    margin-block-start: 2.4rem;
   }
   nav#nav.show_nav .nav__social .flex {
     flex-direction: column;
@@ -617,7 +617,7 @@ footer p.footer__registration {
   font-size: 2rem;
   font-weight: 800;
   color: #624f48;
-  margin-right: 0.4rem;
+  margin-inline-end: 0.4rem;
   padding: 0.4rem 0.7rem 0 0.7rem;
   background-color: #d9d5ca;
   border-radius: 0.35rem;
@@ -636,14 +636,14 @@ footer p.footer__registration {
   margin-bottom: 1rem;
 }
 #our-story.grid .grid__item_1 span {
-  margin-top: 0.3rem;
-  margin-right: 0.3rem;
+  margin-block-start: 0.3rem;
+  margin-inline-end: 0.3rem;
   margin-bottom: 0.3rem;
 }
 #our-story.grid .grid__item_2 {
   grid-column: 3/9;
   grid-row: 4/10;
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   position: relative;
 }
 #our-story.grid .grid__item_2 span {
@@ -652,7 +652,7 @@ footer p.footer__registration {
   left: 0.3rem;
 }
 #our-story.grid .grid__item_3 {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   grid-column: 10/17;
   grid-row: 4/10;
 }
@@ -678,7 +678,7 @@ footer p.footer__registration {
 #our-story.grid .grid__item_6 {
   grid-column: 18/25;
   grid-row: 4/10;
-  margin-top: 4rem;
+  margin-block-start: 4rem;
   position: relative;
 }
 #our-story.grid .grid__item_6 span {
@@ -690,7 +690,7 @@ footer p.footer__registration {
   grid-column: 23/33;
   grid-row: 4/10;
   max-width: 400.35rem;
-  margin-left: 3rem;
+  margin-inline-start: 3rem;
 }
 #our-story.grid .grid__item_8 {
   grid-column: 26/33;
@@ -733,7 +733,7 @@ footer p.footer__registration {
   }
   #our-story.grid .grid__item_1 h2 {
     color: #624f48;
-    margin-top: -2rem;
+    margin-block-start: -2rem;
   }
   #our-story.grid .grid__item_2 {
     grid-row: 1/2;
@@ -834,7 +834,7 @@ footer p.footer__registration {
   height: 13.125rem;
 }
 .contact-page .main .contact-us input[type=text] {
-  margin-right: 2rem;
+  margin-inline-end: 2rem;
 }
 @media (max-width: 45em) {
   .contact-page .contact-us__text-input-zone {
@@ -881,8 +881,8 @@ footer p.footer__registration {
   }
   .main .main--right .main__shop_info__address {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     top: 2.4rem;
     left: 0;
     width: -moz-fit-content;

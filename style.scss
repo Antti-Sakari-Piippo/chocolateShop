@@ -137,7 +137,7 @@ input[type='text'] {
     border: none;
     font-size: 1.5rem;
     min-width: 15.625rem;
-    padding-left: 0.5rem;
+    padding-inline-start: 0.5rem;
     height: 3.125rem;
 }
 
@@ -160,12 +160,12 @@ button:active {
 }
 
 textarea {
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
+    padding-inline-start: 0.5rem;
+    padding-block-start: 0.5rem;
     font-size: 1.5rem;
     min-width: 22.5rem;
     min-height: 11.6875rem;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
     border: none;
 }
 // END OF FORM
@@ -203,7 +203,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1.35rem 1rem 1rem 1rem;
     line-height: 0;
     float: right;
-    margin-right: 4rem;
+    margin-inline-end: 4rem;
 }
 
 .hamburger-icon:after,
@@ -235,10 +235,10 @@ nav {
     .nav__logo {
         gap: 0.9rem;
         h4 {
-            margin-right: -0.6875rem;
+            margin-inline-end: -0.6875rem;
         }
         img {
-            margin-top: 0.8rem;
+            margin-block-start: 0.8rem;
         }
     }
     .nav__items {
@@ -283,7 +283,7 @@ nav {
             scale: 1.1;
         }
         ul {
-            padding-top: 0.4rem;
+            padding-block-start: 0.4rem;
             li {
                 i {
                     font-size: 1.8rem;
@@ -294,7 +294,7 @@ nav {
 
     .nav__login {
         gap: 0.5rem;
-        margin-left: 10%;
+        margin-inline-start: 10%;
         border: 2px solid rgba($color: white, $alpha: 0.2);
         border-radius: 2rem;
         padding: 0.25rem 0.7rem;
@@ -366,14 +366,14 @@ nav {
         justify-content: center;
         align-items: baseline;
         ul {
-            margin-bottom: 1.6rem;
+            margin-block-end: 1.6rem;
             li {
                 flex-direction: column;
                 flex-wrap: wrap;
                 a,
                 h3 {
                     text-align: center;
-                    margin-right: auto;
+                    margin-inline-end: auto;
                 }
             }
         }
@@ -413,14 +413,14 @@ nav {
 }
 
 .main {
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
     width: 100%;
     display: flex;
     height: 100%;
     justify-content: center;
     align-content: center;
     vertical-align: middle;
-    margin-bottom: 6rem;
+    margin-block-end: 6rem;
     .main--left {
         text-align: center;
         .main__text-area {
@@ -540,10 +540,10 @@ footer {
     .footer__logo {
         gap: 0.4rem;
         h5.footer__logo-text {
-            margin-right: -0.35rem;
+            margin-inline-end: -0.35rem;
         }
         img.footer__logo-img {
-            margin-top: 0.2rem;
+            margin-block-start: 0.2rem;
             max-width: 3.5rem;
         }
     }
@@ -566,7 +566,7 @@ footer {
         max-width: 95%;
     }
     body section .main--left {
-        margin-top: 4rem;
+        margin-block-start: 4rem;
     }
 
     .main__shop_info__address {
@@ -594,7 +594,7 @@ footer {
         height: 89%;
         display: flex;
         float: right;
-        margin-right: 2rem;
+        margin-inline-end: 2rem;
     }
     #nav .hamburger-icon {
         display: block;
@@ -627,8 +627,8 @@ footer {
             justify-content: flex-start;
         }
         .nav__items {
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+            margin-block-start: 3rem;
+            margin-block-end: 3rem;
             width: 100%;
             display: inline-block;
             .wrapper.flex {
@@ -643,7 +643,7 @@ footer {
             }
         }
         .nav__social {
-            margin-top: 2.4rem;
+            margin-block-start: 2.4rem;
             .flex {
                 flex-direction: column;
             }
@@ -684,7 +684,7 @@ footer {
         font-size: 2rem;
         font-weight: 800;
         color: $choco-dark;
-        margin-right: 0.4rem;
+        margin-inline-end: 0.4rem;
         padding: 0.4rem 0.7rem 0 0.7rem;
         background-color: $bg-color;
         border-radius: 0.35rem;
@@ -701,18 +701,18 @@ footer {
         grid-row: 2/5;
         h2 {
             color: $choco-dark;
-            margin-bottom: 1rem;
+            margin-block-end: 1rem;
         }
         span {
-            margin-top: 0.3rem;
-            margin-right: 0.3rem;
-            margin-bottom: 0.3rem;
+            margin-block-start: 0.3rem;
+            margin-inline-end: 0.3rem;
+            margin-block-end: 0.3rem;
         }
     }
     .grid__item_2 {
         grid-column: 3 / 9;
         grid-row: 4/10;
-        margin-top: 2rem;
+        margin-block-start: 2rem;
         position: relative;
 
         span {
@@ -722,7 +722,7 @@ footer {
         }
     }
     .grid__item_3 {
-        margin-top: 2rem;
+        margin-block-start: 2rem;
         grid-column: 10/17;
         grid-row: 4/10;
     }
@@ -743,12 +743,12 @@ footer {
     .grid__item_5 {
         grid-column: 18/26;
         grid-row: 2/5;
-        margin-bottom: 3rem;
+        margin-block-end: 3rem;
     }
     .grid__item_6 {
         grid-column: 18/25;
         grid-row: 4/10;
-        margin-top: 4rem;
+        margin-block-start: 4rem;
         position: relative;
         span {
             position: absolute;
@@ -760,7 +760,7 @@ footer {
         grid-column: 23/33;
         grid-row: 4/10;
         max-width: 400.35rem;
-        margin-left: 3rem;
+        margin-inline-start: 3rem;
     }
     .grid__item_8 {
         grid-column: 26/33;
@@ -805,7 +805,7 @@ footer {
             grid-row: 1/2;
             h2 {
                 color: $choco-dark;
-                margin-top: -2rem;
+                margin-block-start: -2rem;
             }
         }
         .grid__item_2 {
@@ -906,7 +906,7 @@ footer {
         .contact-us {
             h2 {
                 color: $chocolate;
-                margin-bottom: 1rem;
+                margin-block-end: 1rem;
                 font-weight: 500;
             }
             .contact-us__text-input-zone {
@@ -914,7 +914,7 @@ footer {
                 height: 13.125rem;
             }
             input[type='text'] {
-                margin-right: 2rem;
+                margin-inline-end: 2rem;
             }
         }
     }
@@ -942,7 +942,7 @@ footer {
             }
             .content.flex {
                 gap: 2rem 0;
-                margin-bottom: 3rem;
+                margin-block-end: 3rem;
             }
         }
     }
@@ -969,8 +969,8 @@ footer {
 
     .main .main--right .main__shop_info__address {
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
         top: 2.4rem;
         left: 0;
         width: fit-content;
